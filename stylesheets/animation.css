@@ -1,55 +1,48 @@
-.glazik {
-  width: 277px;
-  height: 210px;
-  background-image: url('images/glaz');
-}
-.emoji {
-  width: 160px;
-  width: 160px;
-  position: relative;
-  background-image: url('/images/emoji-160.png');
-}
-.eyes,
-.mouth {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(/images/emoji-160.png);
-}
-.eyes {
-  background-position: -160px top;
-}
-.mouth {
-  background-position: -640px top;
-}
-.animMouth {
-  animation: mouth 3s steps(1) infinite;
-}
-.animEyes {
-  animation: eyes 3s steps(1) infinite;
+.glaz {
+  width: 300px;
+  height: 250px;
+  background-image: url(../images/glazkrasn.png);
+  margin: 275px 0;
 }
 
-@keyframes mouth {
+.beg {
+  animation: beg 1s steps(1) infinite;
+}
+.path {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  top: 0;
+  animation: path 4s linear infinite;
+}
+@keyframes beg {
   0% {
-    background-position: -160px top;
+    background-position: 0 top;
+  }
+  17% {
+    background-position: -300px top;
   }
   33% {
-    background-position: -320px top;
+    background-position: -600px top;
   }
-  66% {
-    background-position: -480px top;
+  50% {
+    background-position: -900px top;
+  }
+  67% {
+    background-position: -1200px top;
+  }
+  83% {
+    background-position: -1500px top;
+  }
+  100% {
+    background-position: -1800px top;
   }
 }
-@keyframes eyes {
+@keyframes path {
   0% {
-    background-position: -640px top;
+    left: 0;
   }
-  33% {
-    background-position: -800px top;
-  }
-  66% {
-    background-position: -960px top;
+  100% {
+    left: 100%;
   }
 }
