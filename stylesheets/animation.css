@@ -40,7 +40,7 @@
 }
 @keyframes path {
   0% {
-    left: 0;
+    left: -300px;
   }
   100% {
     left: 100%;
