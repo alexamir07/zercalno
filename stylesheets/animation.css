@@ -3,3 +3,53 @@
   height: 210px;
   background-image: url('images/glaz');
 }
+.emoji {
+  width: 160px;
+  width: 160px;
+  position: relative;
+  background-image: url('/images/emoji-160.png');
+}
+.eyes,
+.mouth {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(/images/emoji-160.png);
+}
+.eyes {
+  background-position: -160px top;
+}
+.mouth {
+  background-position: -640px top;
+}
+.animMouth {
+  animation: mouth 3s steps(1) infinite;
+}
+.animEyes {
+  animation: eyes 3s steps(1) infinite;
+}
+
+@keyframes mouth {
+  0% {
+    background-position: -160px top;
+  }
+  33% {
+    background-position: -320px top;
+  }
+  66% {
+    background-position: -480px top;
+  }
+}
+@keyframes eyes {
+  0% {
+    background-position: -640px top;
+  }
+  33% {
+    background-position: -800px top;
+  }
+  66% {
+    background-position: -960px top;
+  }
+}
