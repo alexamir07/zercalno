@@ -1,3 +1,56 @@
 body {
   font-family: 'KrasnodarGroteskTrial';
+  background-color: #fff7e0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.firstBlock {
+  width: 100%;
+  display: flex;
+  gap: 0%;
+}
+.firstBlock > div {
+  width: 25%;
+  height: 25vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.firstBlock2 > div {
+  width: 25%;
+  height: 25vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 1px;
+}
+.glaz1 {
+  background-color: #fff7e0;
+}
+.block1 {
+  background-color: #390100;
+}
+.glaz2 {
+  background-color: #fff7e0;
+}
+.block2 {
+  background-color: #ffecad;
+}
+.block3 {
+  background-color: #ffecad;
+}
+.glaz3 {
+  background-color: #fff7e0;
+}
+.block4 {
+  background-color: #390100;
+}
+.glaz4 {
+  background-color: #fff7e0;
+}
+.header h1 {
+  color: #fe010c;
+  font-size: 380px;
+  text-align: center;
 }

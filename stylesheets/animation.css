@@ -46,3 +46,28 @@
     left: 100%;
   }
 }
+.dvigaet {
+  width: 350px;
+  height: 180px;
+  background-image: url(../images/dvigaet.png);
+  position: relative;
+  top: 0;
+  animation: dvigaet 1s infinite;
+}
+@keyframes dvigaet {
+  0% {
+    background-position: 0 top;
+  }
+  25% {
+    background-position: -350px top;
+  }
+  50% {
+    background-position: -700px top;
+  }
+  75% {
+    background-position: -1050px top;
+  }
+  100% {
+    background-position: -1400px top;
+  }
+}
