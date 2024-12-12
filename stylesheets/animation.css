@@ -71,3 +71,28 @@
     background-position: -1400px top;
   }
 }
+.container-row {
+  width: 100%;
+  /* height: 12vw; */
+  background-color: #fe010c;
+  /* padding-top: 4.5vw; */
+  position: relative;
+}
+.row {
+  position: absolute;
+  animation: moveRow 6s linear infinite;
+}
+.row p {
+  width: 200%;
+  background-color: aliceblue;
+  color: #fe010c;
+  font-size: 3vw;
+}
+@keyframes moveRow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
