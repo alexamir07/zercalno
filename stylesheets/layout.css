@@ -58,4 +58,9 @@ body {
   color: #fe010c;
   font-size: 18vw;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.header span:hover {
+  color: #390100;
 }
