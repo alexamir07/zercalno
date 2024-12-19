@@ -14,6 +14,7 @@
   position: relative;
   top: 0;
   animation: path 4s linear infinite;
+  /* overflow: hidden; */
 }
 @keyframes beg {
   0% {
@@ -47,28 +48,30 @@
   }
 }
 .dvigaet {
-  width: 350px;
-  height: 180px;
+  width: 100%;
+  height: 50%;
   background-image: url(../images/dvigaet.png);
+  background-size: 500% 100%;
   position: relative;
+
   top: 0;
-  animation: dvigaet 1s infinite;
+  animation: dvigaet 1s steps(1) infinite;
 }
 @keyframes dvigaet {
   0% {
     background-position: 0 top;
   }
   25% {
-    background-position: -350px top;
+    background-position: -100% top;
   }
   50% {
-    background-position: -700px top;
+    background-position: -200% top;
   }
   75% {
-    background-position: -1050px top;
+    background-position: -300% top;
   }
   100% {
-    background-position: -1400px top;
+    background-position: -400% top;
   }
 }
 /* .container-row {
@@ -91,19 +94,21 @@
   overflow: hidden;
   height: 4.8vw;
 }
-.row-image {
+.row {
   width: 200%;
+  /* position: absolute; */
+  animation: moveRow 6s linear infinite;
+}
+.row-image {
   height: 4.8vw;
   background-image: url(../images/stroca.png);
   background-size: contain;
-  position: absolute;
-  animation: moveRole 6s linear infinite;
 }
 @keyframes moveRow {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
