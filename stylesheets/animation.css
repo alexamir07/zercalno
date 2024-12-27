@@ -3,7 +3,7 @@
   height: 13vw;
   background-image: url(../images/glazkrasn.png);
   background-size: 109.375vw 13vw;
-  margin: 14vw 0;
+  margin: 10vw 0;
 }
 
 .beg {
@@ -59,7 +59,6 @@
   top: 0;
   animation: dvigaet 1s steps(1) infinite;
 }
-
 @keyframes dvigaet {
   0% {
     background-position: 0 top;
@@ -256,4 +255,99 @@
     top: 0;
     left: 0;
   }
+}
+/* анимация лучей */
+.transition {
+  width: 50vw;
+  height: 50vw;
+  background-image: url(../images/luchi.png);
+  background-size: 605% 100%;
+  position: relative;
+
+  top: 0;
+  animation: rays 1s steps(1) infinite;
+}
+
+/* @keyframes rays {
+  0% {
+    background-position: 0 top;
+  }
+  20% {
+    background-position: -50vw top;
+  }
+  40% {
+    background-position: -100vw top;
+  }
+  60% {
+    background-position: -150vw top;
+  }
+  80% {
+    background-position: -200vw top;
+  }
+  100% {
+    background-position: -250vw top;
+  }
+} */
+@keyframes rays {
+  0% {
+    background-position: 0 top;
+  }
+  28% {
+    background-position: -50vw top;
+  }
+  42% {
+    background-position: -100vw top;
+  }
+  56% {
+    background-position: -150vw top;
+  }
+  71% {
+    background-position: -200vw top;
+  }
+  85% {
+    background-position: -250vw top;
+  }
+  100% {
+    background-position: -300vw top;
+  }
+}
+/* анимация чуваков */
+.dude {
+  width: 50vw;
+  height: 50vw;
+  background-image: url(../images/chuvaki.png);
+  background-size: 812% 100%;
+  position: relative;
+
+  top: 0;
+  animation: moving 1s steps(1) infinite;
+}
+@keyframes moving {
+  0% {
+    background-position: 0 top;
+  }
+  12% {
+    background-position: -50vw top;
+  }
+  25% {
+    background-position: -100vw top;
+  }
+  37% {
+    background-position: -150vw top;
+  }
+  50% {
+    background-position: -200vw top;
+  }
+  62% {
+    background-position: -250vw top;
+  }
+  75% {
+    background-position: -300vw top;
+  }
+  /* 87% {
+    background-position: -344.75vw top;
+  }
+  100% {
+    background-position: -394vw top;
+  } */
 }
