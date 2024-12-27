@@ -1,19 +1,21 @@
 .glaz {
-  width: 300px;
-  height: 250px;
+  width: 15.625vw;
+  height: 13vw;
   background-image: url(../images/glazkrasn.png);
-  margin: 275px 0;
+  background-size: 109.375vw 13vw;
+  margin: 14vw 0;
 }
 
 .beg {
   animation: beg 1s steps(1) infinite;
 }
 .path {
-  width: 300px;
-  height: 250px;
+  width: 15.625vw;
+  height: 13vw;
   position: relative;
   top: 0;
   animation: path 4s linear infinite;
+  margin-bottom: 2.5vw;
   /* overflow: hidden; */
 }
 @keyframes beg {
@@ -21,22 +23,22 @@
     background-position: 0 top;
   }
   17% {
-    background-position: -300px top;
+    background-position: -15.625vw top;
   }
   33% {
-    background-position: -600px top;
+    background-position: -31.25vw top;
   }
   50% {
-    background-position: -900px top;
+    background-position: -46.825vw top;
   }
   67% {
-    background-position: -1200px top;
+    background-position: -62.5vw top;
   }
   83% {
-    background-position: -1500px top;
+    background-position: -78.125vw top;
   }
   100% {
-    background-position: -1800px top;
+    background-position: -93.175vw top;
   }
 }
 @keyframes path {
@@ -57,6 +59,7 @@
   top: 0;
   animation: dvigaet 1s steps(1) infinite;
 }
+
 @keyframes dvigaet {
   0% {
     background-position: 0 top;
@@ -92,7 +95,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: 4.8vw;
+  height: 8vw;
 }
 .row {
   width: 200%;
@@ -100,9 +103,10 @@
   animation: moveRow 6s linear infinite;
 }
 .row-image {
-  height: 4.8vw;
+  height: 8vw;
   background-image: url(../images/stroca.png);
   background-size: contain;
+  width: 200%;
 }
 @keyframes moveRow {
   0% {
@@ -110,5 +114,146 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+.block1 p {
+  animation: moveText 7s linear infinite;
+}
+.block1 p:hover {
+  animation-play-state: paused;
+}
+.block1 p span:hover {
+  color: #fe010c;
+}
+
+@keyframes moveText {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: 20%;
+    left: 30%;
+  }
+  40% {
+    top: 30%;
+    left: 50%;
+  }
+  60% {
+    top: 70%;
+    left: 10%;
+  }
+  80% {
+    top: 30%;
+    left: 20%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+.block2 p {
+  animation: moveText2 7s linear infinite;
+}
+.block2 p:hover {
+  animation-play-state: paused;
+}
+.block2 p span:hover {
+  color: #fff7e0;
+}
+@keyframes moveText2 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: 50%;
+    left: 20%;
+  }
+  40% {
+    top: 60%;
+    left: 80%;
+  }
+  60% {
+    top: 10%;
+    left: 40%;
+  }
+  80% {
+    top: 30%;
+    left: 10%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+.block3 p {
+  animation: moveText 7s linear infinite;
+}
+.block3 p:hover {
+  animation-play-state: paused;
+}
+.block3 p span:hover {
+  color: #fff7e0;
+}
+@keyframes moveText3 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: 10%;
+    left: 60%;
+  }
+  40% {
+    top: 60%;
+    left: 80%;
+  }
+  60% {
+    top: 80%;
+    left: 20%;
+  }
+  80% {
+    top: 30%;
+    left: 90%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+.block4 p {
+  animation: moveText 7s linear infinite;
+}
+.block4 p:hover {
+  animation-play-state: paused;
+}
+.block4 p span:hover {
+  color: #fe010c;
+}
+@keyframes moveText4 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: 20%;
+    left: 30%;
+  }
+  40% {
+    top: 30%;
+    left: 50%;
+  }
+  60% {
+    top: 70%;
+    left: 10%;
+  }
+  80% {
+    top: 30%;
+    left: 20%;
+  }
+  100% {
+    top: 0;
+    left: 0;
   }
 }

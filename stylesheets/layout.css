@@ -19,6 +19,8 @@ body {
   height: 25vw;
   background-size: contain;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 }
 .firstBlock2 > div {
   width: 25%;
@@ -26,27 +28,37 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 1px;
+  display: flex;
+  align-items: center;
 }
 .glaz1 {
   background-color: #fff7e0;
 }
 .block1 {
   background-color: #390100;
+  padding: 1vw;
+  position: relative;
 }
 .glaz2 {
   background-color: #fff7e0;
 }
 .block2 {
   background-color: #ffecad;
+  padding: 1vw;
+  position: relative;
 }
 .block3 {
   background-color: #ffecad;
+  padding: 1vw;
+  position: relative;
 }
 .glaz3 {
   background-color: #fff7e0;
 }
 .block4 {
   background-color: #390100;
+  padding: 1vw;
+  position: relative;
 }
 .glaz4 {
   background-color: #fff7e0;
@@ -56,11 +68,32 @@ body {
 }
 .header h1 {
   color: #fe010c;
-  font-size: 18vw;
+  font-size: 17.5vw;
+  line-height: 11vw;
   text-align: center;
   display: flex;
   justify-content: center;
 }
 .header span:hover {
   color: #390100;
+}
+.block1 p {
+  font-size: 1.875vw;
+  color: #fff7e0;
+  position: absolute;
+}
+.block2 p {
+  font-size: 1.875vw;
+  color: #fe010c;
+  position: absolute;
+}
+.block3 p {
+  font-size: 1.875vw;
+  color: #fe010c;
+  position: absolute;
+}
+.block4 p {
+  font-size: 1.875vw;
+  color: #fff7e0;
+  position: absolute;
 }
