@@ -10,7 +10,8 @@ body {
 
 .firstBlock,
 .firstBlock2,
-.firstBlock3 {
+.firstBlock3,
+.firstBlock4 {
   width: 100%;
   display: flex;
   gap: 0%;
