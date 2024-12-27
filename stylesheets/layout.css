@@ -98,3 +98,10 @@ body {
   color: #fff7e0;
   position: absolute;
 }
+img {
+  border: none;
+  outline: none;
+  display: block; /* Убирает отступы, которые могут быть у `img` */
+  margin: 0; /* Убирает возможные внешние отступы */
+  padding: 0; /* Убирает возможные внутренние отступы */
+}
